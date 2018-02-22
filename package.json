@@ -1,6 +1,6 @@
 {
   "name": "tsc-do",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Takes action when tsc compilation succeeds or fails.",
   "main": "index.js",
   "scripts": {
@@ -10,6 +10,7 @@
     "tsc-do": "./bin/tsc-do.sh"
   },
   "keywords": [
+    "typescript",
     "tsc",
     "action",
     "compilation",
