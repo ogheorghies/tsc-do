@@ -25,7 +25,7 @@ so that the screen is *not* cleared before each compilation, use:
 tsc --watch | tsc-do
 ```
 
-To clear the screen before each compilation, use:
+To clear the screen after each successful compilation, use:
 ```bash
-tsc --watch | tsc-do clear clear
+tsc --watch | tsc-do clear
 ```
