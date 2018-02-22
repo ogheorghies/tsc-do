@@ -7,15 +7,15 @@ npm install tsc-do
 
 Usage:
 ```
-    tsc --watch | tsc-do {comand-when-build-succeeds} {command-when-build-fails}
+    tsc --watch | tsc-do {run-on-success} {run-on-error}
     
     tsc-do --help
 ```
 
 Examples:
 ```
-    tsc --watch | tsc-do 'say OK' 'say Failed'
-    tsc --watch | tsc-do ./my-success-script.sh ./my-failure-script.sh
+    tsc --watch | tsc-do 'say OK' 'say Error'
+    tsc --watch | tsc-do ./on-success.sh ./on-error.sh
 ```
 
 To get back the functionality of `tsc` before https://github.com/Microsoft/TypeScript/pull/20389, 
