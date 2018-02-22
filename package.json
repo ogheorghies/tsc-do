@@ -1,0 +1,25 @@
+{
+  "name": "tsc-do",
+  "version": "1.0.0",
+  "description": "Takes action when tsc compilation succeeds or fails.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "bin": {
+    "tsc-do": "./bin/tsc-do.sh"
+  },
+  "keywords": [
+    "tsc",
+    "action",
+    "compilation",
+    "success",
+    "failure"
+  ],
+  "repository": { 
+    "type" : "git",
+    "url" : "https://github.com/ogheorghies/tsc-do.git"
+  },
+  "author": "Ovidiu Gheorghies",
+  "license": "ISC"
+}
