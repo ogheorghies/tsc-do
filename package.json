@@ -1,6 +1,6 @@
 {
   "name": "tsc-do",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Takes action when tsc compilation succeeds or fails.",
   "main": "index.js",
   "scripts": {
