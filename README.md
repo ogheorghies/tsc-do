@@ -1,22 +1,17 @@
 Take action when tsc compilation succeeds or fails.
 
-Installation:
-```bash
-npm install tsc-do
-```
 
 Usage:
 ```bash
-tsc --watch | tsc-do {run-on-success} {run-on-error}
-
-tsc-do --help
+tsc --watch | tsc-do {on-success} {on-error} {on-start}
 ```
 
 Examples:
 ```bash
-tsc --watch | tsc-do 'say OK' 'say Error'
-tsc --watch | tsc-do ./on-success.sh ./on-error.sh
-```
+tsc --watch | tsc-do 'say OK' 'say Failed' 'say Building'
+tsc --watch | tsc-do ./on-success.sh ./on-error.sh ./on-start.sh
+tsc --watch | tsc-do
+```bash
 
 To get back the functionality of `tsc` before https://github.com/Microsoft/TypeScript/pull/20389, 
 so that the screen is *not* cleared before each compilation, use:
@@ -27,5 +22,5 @@ tsc --watch | tsc-do
 
 To clear the screen before each compilation, use:
 ```bash
-tsc --watch | tsc-do clear clear
+tsc --watch | tsc-do true true clear
 ```
