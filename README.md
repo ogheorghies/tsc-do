@@ -1,4 +1,4 @@
-Take action when tsc compilation succeeds or fails.
+Take action when tsc compilation succeeds, fails, or starts.
 
 
 Usage:

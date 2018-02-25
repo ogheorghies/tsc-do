@@ -2,7 +2,7 @@
 
 [ "$1" == "--help" ] && {
     cat <<EOM
-Take action when tsc compilation succeeds or fails.
+Take action when tsc compilation succeeds, fails, or starts.
 
 Usage:
     tsc --watch | tsc-do {on-success} {on-error} {on-start}
